@@ -20,28 +20,5 @@ pipeline {
         bat "bundle exec fastlane build"
       }
     }
-    stage('Release to on 3rd party') {
-      when {
-        anyOf {
-          branch "develop";
-          branch "feature/*";
-        }
-      }
-      steps {
-        echo "Releasing to 3rd party"
-        // Add your 3rd party fastlane command
-        // sh "bundle exec fastlane release_third_party"
-      }
-    }
-    stage('Release to Play Store ') {
-      when {
-        branch "master"
-        // by using when we are checking for the branch and running oly if the branch matches
-      }
-      steps {
-        echo "$STAGE_RELEASE_DESCRIPTION"
-        bat "bundle exec fastlane release"
-      }
-    }
   }
 }
