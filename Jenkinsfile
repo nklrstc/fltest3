@@ -18,6 +18,7 @@ pipeline {
       steps {
         echo "Building"
         bat "bundle exec fastlane build"
+      }
     }
   }
 }
