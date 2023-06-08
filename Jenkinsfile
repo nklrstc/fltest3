@@ -9,7 +9,7 @@ pipeline {
     stage('Build') {
       steps {
         echo "Building"
-        sh "bundle exec fastlane build"
+        bat "bundle exec fastlane build"
       }
     }
   }
