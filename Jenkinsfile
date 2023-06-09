@@ -6,7 +6,7 @@ pipeline {
     stage('Setup') {
       steps {
         echo "Setup"
-        sh "gem install bundler"
+        sh "sudo gem install bundler"
       }
     }
   }
