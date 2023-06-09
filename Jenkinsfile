@@ -3,12 +3,6 @@
 pipeline {
   agent any
   stages {
-    stage('rubytest') {
-        {
-              echo "rubytest"
-              bat "ruby -v"
-       }
-    }
     stage('Setup') {
       steps {
         echo "Setup"
