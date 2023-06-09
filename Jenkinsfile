@@ -3,11 +3,13 @@
 pipeline {
   agent any
   stages {
+    stage('rubytest') {
+        {
+              echo "rubytest"
+              bat "ruby -v"
+       }
+    }
     stage('Setup') {
-    steps {
-            echo "rubytest"
-            bat "ruby -v"
-          }
       steps {
         echo "Setup"
         // Install bundler in order to use fastlane
