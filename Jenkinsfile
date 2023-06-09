@@ -1,5 +1,4 @@
 #!/bin/bash -l
-#! groovy
 
 pipeline {
   agent any
