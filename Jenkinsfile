@@ -12,7 +12,8 @@ pipeline {
       steps {
         echo "Building"
         echo "test"
-        sh "bundle exec fastlane build"
+        sh "fastlane init"
+//         sh "bundle exec fastlane build"
       }
     }
   }
