@@ -17,7 +17,7 @@ pipeline {
     stage('Build') {
       steps {
         echo "Building"
-//         sh "bundle exec fastlane build"
+        sh "bundle exec fastlane build"
       }
     }
   }
